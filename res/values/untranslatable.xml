@@ -108,11 +108,16 @@ THE SOFTWARE.
 		<item>@string/fixed_info</item>
 	</string-array>
 
+	<!-- colors -->
+	<color name="vanillaPrimary">#9e9d24</color>
+	<color name="vanillaPrimaryDark">#827717</color>
+	<color name="vanillaAccent">#689f38</color>
+
 	<!-- styles -->
 	<style name="VanillaBase" parent="android:Theme.Material.Light">
-		<item name="android:colorAccent">#f00</item>
-		<item name="android:colorPrimary">#ff0</item>
-		<item name="android:colorPrimaryDark">#330</item>
+		<item name="android:colorAccent">@color/vanillaAccent</item>
+		<item name="android:colorPrimary">@color/vanillaPrimary</item>
+		<item name="android:colorPrimaryDark">@color/vanillaPrimaryDark</item>
 	</style>
 	<style name="Dialog" parent="android:Theme.Material.Dialog" />
 	<style name="DialogMinWidth" parent="android:Theme.Material.Dialog.MinWidth" />
@@ -127,6 +132,7 @@ THE SOFTWARE.
 	</style>
 	<style name="PlaybackActionBar" parent="android:Widget.Material.ActionBar">
 		<item name="android:displayOptions">showTitle|homeAsUp</item>
+		<item name="android:background">@color/vanillaPrimary</item>
 	</style>
 	<style name="Library" parent="VanillaBase">
 		<item name="android:actionBarStyle">@style/LibraryActionBar</item>
@@ -134,6 +140,7 @@ THE SOFTWARE.
 	</style>
 	<style name="LibraryActionBar" parent="android:Widget.Material.ActionBar">
 		<item name="android:displayOptions"></item>
+		<item name="android:background">@color/vanillaPrimary</item>
 	</style>
 	<style name="LibraryActionBarTabText" parent="android:Widget.Material.ActionBar.TabText">
 		<item name="android:singleLine">true</item>
