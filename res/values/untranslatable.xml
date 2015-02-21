@@ -109,29 +109,33 @@ THE SOFTWARE.
 	</string-array>
 
 	<!-- styles -->
-	<style name="Dialog" parent="android:Theme.Holo.Dialog" />
-	<style name="DialogMinWidth" parent="android:Theme.Holo.Dialog.MinWidth" />
+	<style name="VanillaBase" parent="android:Theme.Material.Light">
+		<item name="android:colorAccent">#f00</item>
+		<item name="android:colorPrimary">#ff0</item>
+		<item name="android:colorPrimaryDark">#330</item>
+	</style>
+	<style name="Dialog" parent="android:Theme.Material.Dialog" />
+	<style name="DialogMinWidth" parent="android:Theme.Material.Dialog.MinWidth" />
 	<style name="AlertDialogItem">
 		<item name="android:textColor">?android:textColorAlertDialogListItem</item>
 	</style>
-	<style name="Playback" parent="android:Theme.Holo">
-		<item name="android:actionBarStyle">@style/PlaybackActionBar</item>
-		<item name="android:windowBackground">@android:color/black</item>
-	</style>
-	<style name="BackActionBar" parent="android:Theme.Holo">
+	<style name="Playback" parent="VanillaBase">
 		<item name="android:actionBarStyle">@style/PlaybackActionBar</item>
 	</style>
-	<style name="PlaybackActionBar" parent="android:Widget.Holo.ActionBar">
+	<style name="BackActionBar" parent="VanillaBase">
+		<item name="android:actionBarStyle">@style/PlaybackActionBar</item>
+	</style>
+	<style name="PlaybackActionBar" parent="android:Widget.Material.ActionBar">
 		<item name="android:displayOptions">showTitle|homeAsUp</item>
 	</style>
-	<style name="Library" parent="android:Theme.Holo">
+	<style name="Library" parent="VanillaBase">
 		<item name="android:actionBarStyle">@style/LibraryActionBar</item>
 		<item name="android:actionBarTabTextStyle">@style/LibraryActionBarTabText</item>
 	</style>
-	<style name="LibraryActionBar" parent="android:Widget.Holo.ActionBar">
+	<style name="LibraryActionBar" parent="android:Widget.Material.ActionBar">
 		<item name="android:displayOptions"></item>
 	</style>
-	<style name="LibraryActionBarTabText" parent="android:Widget.Holo.ActionBar.TabText">
+	<style name="LibraryActionBarTabText" parent="android:Widget.Material.ActionBar.TabText">
 		<item name="android:singleLine">true</item>
 		<item name="android:textSize">11.5sp</item>
 	</style>

@@ -252,8 +252,6 @@ public class FullPlaybackActivity extends PlaybackActivity
 	{
 		if (mOverlayText == null) {
 			TextView view = new TextView(this);
-			view.setBackgroundColor(Color.BLACK);
-			view.setTextColor(Color.WHITE);
 			view.setGravity(Gravity.CENTER);
 			view.setPadding(25, 25, 25, 25);
 			// Make the view clickable so it eats touch events
